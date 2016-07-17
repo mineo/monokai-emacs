@@ -395,7 +395,7 @@ Also affects 'linum-mode' background."
                                         :italic nil))))
 
    `(font-lock-variable-name-face
-     ((,class (:foreground ,monokai-fg))
+     ((,monokai-class (:foreground ,monokai-fg))
       (,monokai-256-class (:foreground ,monokai-256-orange))))
 
    `(font-lock-warning-face
@@ -567,7 +567,7 @@ Also affects 'linum-mode' background."
                                                              :style unspecified)))))
 
    `(powerline-active1
-     ((,monokai-class (:background ,monokai-gray-d))
+     ((,monokai-class (:background ,monokai-bg))
       (,monokai-256-class (:background ,monokai-256-gray-d))))
 
    `(powerline-active2
@@ -577,12 +577,12 @@ Also affects 'linum-mode' background."
 
    `(mode-line-inactive
      ((,monokai-class (:inverse-video unspecified
-                                      :underline unspecified
-                                      :foreground ,monokai-comments
-                                      :background ,monokai-background
-                                      :box (:line-width 1
-                                                        :color ,monokai-gray
-                                                        :style unspecified)))
+                              :underline unspecified
+                              :foreground ,monokai-comments
+                              :background ,monokai-bg
+                              :box (:line-width 1
+                                                :color ,monokai-gray
+                                                :style unspecified)))
       (,monokai-256-class (:inverse-video unspecified
                                            :underline unspecified
                                            :foreground ,monokai-256-comments
@@ -592,11 +592,11 @@ Also affects 'linum-mode' background."
                                                              :style unspecified)))))
 
    `(powerline-inactive1
-     ((,monokai-class (:background ,monokai-gray-d))
+     ((,monokai-class (:background ,monokai-bg))
       (,monokai-256-class (:background ,monokai-256-gray-d))))
 
    `(powerline-inactive2
-     ((,monokai-class (:background ,monokai-background))
+     ((,monokai-class (:background ,monokai-bg))
       (,monokai-256-class (:background ,monokai-256-background))))
 
    ;; header-line
