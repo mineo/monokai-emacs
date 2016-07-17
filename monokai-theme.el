@@ -2810,12 +2810,12 @@ Also affects 'linum-mode' background."
       (,monokai-256-class (:foreground ,monokai-256-gray))))
 
    `(helm-source-header
-     ((,monokai-class (:background ,monokai-violet-l
-                                   :foreground ,monokai-background
-                                   :underline nil))
+     ((,monokai-class (:background ,monokai-bg
+                           :foreground ,monokai-orange-l
+                           :underline t))
       (,monokai-256-class (:background ,monokai-256-violet-l
                                         :foreground ,monokai-256-background
-                                        :underline nil))))
+                                    :underline nil))))
 
    `(helm-swoop-target-line-face
      ((,monokai-class (:background ,monokai-highlight-line))
