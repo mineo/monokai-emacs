@@ -1589,8 +1589,8 @@ Also affects 'linum-mode' background."
 
    ;; diff
    `(diff-added
-     ((,monokai-class (:foreground ,monokai-green
-                                   :background ,monokai-background))
+     ((,monokai-class (:foreground ,monokai-orange
+                           :background ,monokai-bg))
       (,monokai-256-class (:foreground ,monokai-256-green
                                         :background ,monokai-256-background))))
 
@@ -1601,10 +1601,14 @@ Also affects 'linum-mode' background."
                                         :background ,monokai-256-background))))
 
    `(diff-removed
-     ((,monokai-class (:foreground ,monokai-red
-                                   :background ,monokai-background))
+     ((,monokai-class (:foreground ,monokai-blue
+                           :background ,monokai-bg))
       (,monokai-256-class (:foreground ,monokai-256-red
                                         :background ,monokai-256-background))))
+
+   `(diff-context
+     ((,class (:background ,monokai-bg))
+      (,terminal-class (:background ,terminal-monokai-bg))))
 
    `(diff-header
      ((,monokai-class (:background ,monokai-background))
