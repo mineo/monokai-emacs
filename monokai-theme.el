@@ -395,7 +395,7 @@ Also affects 'linum-mode' background."
                                         :italic nil))))
 
    `(font-lock-variable-name-face
-     ((,monokai-class (:foreground ,monokai-fg))
+     ((,monokai-class (:foreground ,monokai-orange))
       (,monokai-256-class (:foreground ,monokai-256-orange))))
 
    `(font-lock-warning-face
@@ -567,8 +567,8 @@ Also affects 'linum-mode' background."
                                                              :style unspecified)))))
 
    `(powerline-active1
-     ((,monokai-class (:background ,monokai-bg))
-      (,monokai-256-class (:background ,monokai-256-gray-d))))
+     ((,monokai-class (:background ,monokai-background))
+      (,monokai-256-class (:background ,monokai-256-background))))
 
    `(powerline-active2
      ((,monokai-class (:background ,monokai-background))
@@ -577,12 +577,12 @@ Also affects 'linum-mode' background."
 
    `(mode-line-inactive
      ((,monokai-class (:inverse-video unspecified
-                              :underline unspecified
-                              :foreground ,monokai-comments
-                              :background ,monokai-bg
-                              :box (:line-width 1
-                                                :color ,monokai-gray
-                                                :style unspecified)))
+                                      :underline unspecified
+                                      :foreground ,monokai-comments
+                                      :background ,monokai-background
+                                      :box (:line-width 1
+                                                        :color ,monokai-gray
+                                                        :style unspecified)))
       (,monokai-256-class (:inverse-video unspecified
                                            :underline unspecified
                                            :foreground ,monokai-256-comments
@@ -592,11 +592,11 @@ Also affects 'linum-mode' background."
                                                              :style unspecified)))))
 
    `(powerline-inactive1
-     ((,monokai-class (:background ,monokai-bg))
+     ((,monokai-class (:background ,monokai-gray-d))
       (,monokai-256-class (:background ,monokai-256-gray-d))))
 
    `(powerline-inactive2
-     ((,monokai-class (:background ,monokai-bg))
+     ((,monokai-class (:background ,monokai-background))
       (,monokai-256-class (:background ,monokai-256-background))))
 
    ;; header-line
@@ -1590,7 +1590,7 @@ Also affects 'linum-mode' background."
    ;; diff
    `(diff-added
      ((,monokai-class (:foreground ,monokai-orange
-                           :background ,monokai-bg))
+                           :background ,monokai-background))
       (,monokai-256-class (:foreground ,monokai-256-green
                                         :background ,monokai-256-background))))
 
@@ -1602,13 +1602,13 @@ Also affects 'linum-mode' background."
 
    `(diff-removed
      ((,monokai-class (:foreground ,monokai-blue
-                           :background ,monokai-bg))
+                           :background ,monokai-background))
       (,monokai-256-class (:foreground ,monokai-256-red
                                         :background ,monokai-256-background))))
 
    `(diff-context
-     ((,class (:background ,monokai-bg))
-      (,terminal-class (:background ,terminal-monokai-bg))))
+     ((,monokai-class (:background ,monokai-background))
+      (,monokai-256-class (:background ,monokai-256-background))))
 
    `(diff-header
      ((,monokai-class (:background ,monokai-background))
@@ -2810,7 +2810,7 @@ Also affects 'linum-mode' background."
       (,monokai-256-class (:foreground ,monokai-256-gray))))
 
    `(helm-source-header
-     ((,monokai-class (:background ,monokai-bg
+     ((,monokai-class (:background ,monokai-background
                            :foreground ,monokai-orange-l
                            :underline t))
       (,monokai-256-class (:background ,monokai-256-violet-l
