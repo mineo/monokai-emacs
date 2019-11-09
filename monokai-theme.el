@@ -432,10 +432,12 @@ Also affects 'linum-mode' background."
                                      :background ,monokai-256-highlight-alt))))
 
    `(region
-     ((,monokai-class (:inherit highlight
-                                :background ,monokai-highlight))
-      (,monokai-256-class (:inherit highlight
-                                     :background ,monokai-256-highlight))))
+     ((,monokai-class (:background ,monokai-green
+                                   :foreground ,monokai-background
+                                   :underline t))
+      (,monokai-256-class (:background ,monokai-256-green
+                                       :foreground ,monokai-256-background
+                                       :underline t))))
 
    `(secondary-selection
      ((,monokai-class (:inherit region
