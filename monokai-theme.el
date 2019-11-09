@@ -554,7 +554,7 @@ Also affects 'linum-mode' background."
      ((,monokai-class (:inverse-video unspecified
                                       :underline unspecified
                                       :foreground ,monokai-emphasis
-                                      :background ,monokai-highlight
+                                      :background ,monokai-background
                                       :box (:line-width 1
                                                         :color ,monokai-gray
                                                         :style unspecified)))
