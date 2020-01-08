@@ -433,11 +433,9 @@ Also affects 'linum-mode' background."
 
    `(region
      ((,monokai-class (:background ,monokai-green
-                                   :foreground ,monokai-background
-                                   :underline t))
+                                   :foreground ,monokai-background))
       (,monokai-256-class (:background ,monokai-256-green
-                                       :foreground ,monokai-256-background
-                                       :underline t))))
+                                       :foreground ,monokai-256-background))))
 
    `(secondary-selection
      ((,monokai-class (:inherit region
